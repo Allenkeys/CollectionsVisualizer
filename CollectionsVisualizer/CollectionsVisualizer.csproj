@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Graidot.Utils.CollectionsVisualizer</PackageId>
+    <Version>1.0.0</Version>
+    <Title>Graidot Collections Visualizer</Title>
+    <Authors>Graidot</Authors>
+    <Company>Graidot</Company>
+    <Product>Collections Visualizer</Product>
+    <Copyright>MIT</Copyright>
+  </PropertyGroup>
+
+</Project>
