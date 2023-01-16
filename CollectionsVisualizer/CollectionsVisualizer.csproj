@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>Graidot.Utils.CollectionsVisualizer</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>Graidot Collections Visualizer</Title>
     <Authors>Graidot</Authors>
     <Company>Graidot</Company>
@@ -15,6 +15,7 @@
     <PackageTags>Visualizer, collections, display list, display collections</PackageTags>
     <Description>A terminal outputing program for collections state visualization.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReleaseNotes>Most recent update allows IEnumerable of integer to be passed as arguments. This release update minimized memory allocation, as  we implemented string operations using StringBuilder.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
