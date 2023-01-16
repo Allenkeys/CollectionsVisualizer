@@ -6,7 +6,7 @@ namespace CollectionsVisualizer
 {
     public class Visualizer
     {
-        public static void Display(string[] strArr)
+        public static void Display(IEnumerable<string> strArr)
         {
             try
             {
@@ -25,15 +25,15 @@ namespace CollectionsVisualizer
             }
         }
 
-        public static void Display(List<string> strArr)
+        public static void Display(IEnumerable<int> intArr)
         {
             try
             {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.Append("[");
-                foreach (var item in strArr)
+                foreach (var item in intArr)
                 {
-                    stringBuilder.Append($" \"{item}\",");
+                    stringBuilder.Append($" {item},");
                 }
                 stringBuilder.Append(" ]");
                 Console.WriteLine(stringBuilder.ToString());
