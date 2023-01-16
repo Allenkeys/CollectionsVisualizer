@@ -34,8 +34,13 @@ namespace TestCase
     {
         static void Main(string[] args)
         {
-          List<string> songs = new List<String>{ Hello, Halo, Dangerous, Power };
+          List<string> songs = new List<String>{ "Hello", "Halo", "Dangerous", "Power" };
+          string[] names = { "Josh", "Gray", "Alex", "Henry" };
+
           Visualizer.Display(songs);
+          // [ "Hello", "Halo", "Dangerous", "Power" ]
+          Visualizer.Display(names);
+          // [ "Josh", "Gray", "Alex", "Henry" ]
         }
     }
 }
