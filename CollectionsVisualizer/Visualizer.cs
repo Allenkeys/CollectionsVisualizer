@@ -14,7 +14,7 @@ namespace CollectionsVisualizer
                 stringBuilder.Append("[");
                 foreach (var item in strArr)
                 {
-                    stringBuilder.Append($" {item},");
+                    stringBuilder.Append($" \"{item}\",");
                 }
                 stringBuilder.Append(" ]");
                 Console.WriteLine(stringBuilder.ToString());
@@ -33,7 +33,7 @@ namespace CollectionsVisualizer
                 stringBuilder.Append("[");
                 foreach (var item in strArr)
                 {
-                    stringBuilder.Append($" {item},");
+                    stringBuilder.Append($" \"{item}\",");
                 }
                 stringBuilder.Append(" ]");
                 Console.WriteLine(stringBuilder.ToString());
