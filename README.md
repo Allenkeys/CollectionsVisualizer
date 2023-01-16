@@ -36,11 +36,14 @@ namespace TestCase
         {
           List<string> songs = new List<String>{ "Hello", "Halo", "Dangerous", "Power" };
           string[] names = { "Josh", "Gray", "Alex", "Henry" };
+          int[] nums = { 1, 2, 3 };
 
           Visualizer.Display(songs);
           // [ "Hello", "Halo", "Dangerous", "Power" ]
           Visualizer.Display(names);
           // [ "Josh", "Gray", "Alex", "Henry" ]
+          Visualizer.Display(nums);
+          // [1, 2, 3 ]
         }
     }
 }
