@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-  - To install our package using the .NET CLI, run: `dotnet add package Graidot.Utils.CollectionsVisualizer --version 1.0.0`
+  - To install our package using the .NET CLI, run: `dotnet add package Graidot.Utils.CollectionsVisualizer --version 1.0.2`
   - Installation using Visual Studio
     - Right-click on project dependencies
     - Select manage Nuget packages
