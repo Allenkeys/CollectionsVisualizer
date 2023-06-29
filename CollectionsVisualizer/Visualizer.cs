@@ -6,39 +6,31 @@ namespace CollectionsVisualizer
 {
     public class Visualizer
     {
-        public static void Display(IEnumerable<string> strArr)
+        public static void Display<T>(IEnumerable<T> values) where T : IConvertible
         {
             try
             {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.Append("[");
-                foreach (var item in strArr)
+                if (typeof(T) == typeof(int))
                 {
-                    stringBuilder.Append($" \"{item}\",");
+                    foreach (var item in values)
+                    {
+                        stringBuilder.Append($" {item},");
+                    }
                 }
-                stringBuilder.Append(" ]");
-                Console.WriteLine(stringBuilder.ToString());
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
+                else
+                {
+                    foreach (var item in values)
+                    {
+                        stringBuilder.Append($" \"{item}\",");
+                    }
+                }
 
-        public static void Display(IEnumerable<int> intArr)
-        {
-            try
-            {
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.Append("[");
-                foreach (var item in intArr)
-                {
-                    stringBuilder.Append($" {item},");
-                }
                 stringBuilder.Append(" ]");
                 Console.WriteLine(stringBuilder.ToString());
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
